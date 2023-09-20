@@ -23,6 +23,6 @@ jobs:
       - name: Build and Push Docker Image
         run: |
           docker buildx create --use
-          docker buildx build -t your-dockerhub-username/your-image-name:latest . --push
+          docker buildx build -t mpsymg/jupyter-book-builder:latest . --push
         env:
           DOCKER_CLI_ASK_PASS: "false"
