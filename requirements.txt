@@ -86,6 +86,7 @@ pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==10.0.0
 platformdirs==3.10.0
+playwright==1.38.0
 prometheus-client==0.17.1
 prompt-toolkit==3.0.39
 psutil==5.9.5
@@ -95,7 +96,7 @@ pybtex==0.24.0
 pybtex-docutils==1.0.3
 pycparser==2.21
 pydata-sphinx-theme==0.13.3
-pyee==8.2.2
+pyee==9.0.4
 Pygments==2.16.1
 pyparsing==3.1.1
 pyppeteer==1.0.2
