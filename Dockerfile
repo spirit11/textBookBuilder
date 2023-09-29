@@ -6,5 +6,5 @@ VOLUME /report/src
 COPY . /report
 RUN pip install -r requirements.txt && \
     pyppeteer-install && \
-	playwright install chromium
+    playwright install chromium
 CMD ["jupyter-book", "build", "./src", "--builder", "pdfhtml"]
