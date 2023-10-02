@@ -5,6 +5,7 @@ WORKDIR /report
 VOLUME /report/src
 COPY . /report
 RUN pip install -r requirements.txt && \
+    pip install nbconvert[webpdf] && \
     pyppeteer-install && \
     playwright install chromium
 CMD ["jupyter-book", "build", "./src", "--builder", "pdfhtml"]
