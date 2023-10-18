@@ -8,5 +8,6 @@ RUN pip install -r requirements.txt && \
     pip install nbconvert[webpdf] && \
     pyppeteer-install && \
     playwright install chromium
+EXPOSE 80
 
 CMD ["jupyter-book", "build", "./src", "--builder", "pdfhtml"]
